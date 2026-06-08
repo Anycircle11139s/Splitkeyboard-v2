@@ -1,0 +1,40 @@
+INFO: kbplacer_plugin_action.py:73: Plugin version: 0.16
+INFO: kbplacer_plugin_action.py:74: Python version: '3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]'
+INFO: kbplacer_plugin_action.py:75: KiCad version: 10.0.1 with 4.2.2a1 osx-cocoa (phoenix) wxWidgets 3.2.8
+INFO: kbplacer_dialog.py:695: Language: en
+INFO: kbplacer_plugin_action.py:83: GUI state: {"layout_path": "", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "SW{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": "", "start_index": 1}, "enable_diode_placement": true, "route_switches_with_diodes": true, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Default", "position": {"x": 5.08, "y": 4.0, "orientation": 90.0, "side": "Back"}, "template_path": "", "start_index": -1}, "additional_elements": [{"annotation_format": "ST{}", "position_option": "Custom", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": "", "start_index": -1}], "route_rows_and_columns": true, "template_path": "", "generate_outline": false, "outline_delta": 0.0, "layout_offset": null}
+WARNING: key_placer.py:136: Unexpected switch net position detected, each switch should have two unique nets unambiguously defining position in key matrix, switch-by-matrix association can't be used
+DEBUG: key_placer.py:143: Switches by nets: {}
+DEBUG: key_placer.py:147: Diodes by switch: {'SW58': ['D58'], 'SW57': ['D57']}
+INFO: key_placer.py:1173: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.DEFAULT: 'Default'>, position=ElementPosition(x=5.08, y=4.0, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='', start_index=-1)]
+DEBUG: board_modifier.py:132: Getting SW57 footprint position: (273440000, 109820000)
+DEBUG: board_modifier.py:119: Setting D57 footprint position: (278520000, 113820000)
+DEBUG: board_modifier.py:132: Getting SW58 footprint position: (93830000, 112790000)
+DEBUG: board_modifier.py:119: Setting D58 footprint position: (98910000, 116790000)
+DEBUG: key_placer.py:928: Placing additional elements for SW58
+DEBUG: board_modifier.py:132: Getting SW58 footprint position: (93830000, 112790000)
+DEBUG: board_modifier.py:84: Searching for optional ST58 footprint in /Users/darsh/Downloads/Split keyboard v2/Split keyboard v2.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:928: Placing additional elements for SW57
+DEBUG: board_modifier.py:132: Getting SW57 footprint position: (273440000, 109820000)
+DEBUG: board_modifier.py:84: Searching for optional ST57 footprint in /Users/darsh/Downloads/Split keyboard v2/Split keyboard v2.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+INFO: key_placer.py:483: Routing SW58 with D58
+INFO: key_placer.py:485: Using internal autorouter method
+DEBUG: board_modifier.py:578: Routing at B.Cu layer
+DEBUG: board_modifier.py:595: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:658: Routing pad 'SW58:S1' at (108330000, 117790000) with pad 'D58:2' at (98910000, 115140000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:494: Adding track segment (B.Cu): [(108330000, 117790000), (101560000, 117790000)]
+INFO: board_modifier.py:499: Track added
+INFO: board_modifier.py:494: Adding track segment (B.Cu): [(101560000, 117790000), (98910000, 115140000)]
+INFO: board_modifier.py:499: Track added
+INFO: key_placer.py:483: Routing SW57 with D57
+INFO: key_placer.py:485: Using internal autorouter method
+DEBUG: board_modifier.py:578: Routing at B.Cu layer
+DEBUG: board_modifier.py:595: Netclass: Default, track width: 200000
+DEBUG: board_modifier.py:658: Routing pad 'SW57:S1' at (287940000, 114820000) with pad 'D57:2' at (278520000, 112170000) using coordinate system rotated by 0 degree(s)
+INFO: board_modifier.py:494: Adding track segment (B.Cu): [(287940000, 114820000), (281170000, 114820000)]
+INFO: board_modifier.py:499: Track added
+INFO: board_modifier.py:494: Adding track segment (B.Cu): [(281170000, 114820000), (278520000, 112170000)]
+INFO: board_modifier.py:499: Track added
+INFO: key_placer.py:517: Removing dangling tracks
